@@ -1,0 +1,137 @@
+html {
+  width: auto;
+}
+
+header ul.menuFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 40px;
+}
+
+header li {
+  list-style: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+header a {
+  text-decoration: none;
+  color: #9df0c0;
+  font-size: 25px;
+}
+
+header h1 {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 60px;
+}
+
+main.container-fluid section.row.cards {
+  margin-bottom: 100px;
+}
+
+main.container-fluid h1 {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 60px;
+}
+
+main.container-fluid section div h2.h2Ambar {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  margin-bottom: 40px;
+  margin-left: 90px;
+}
+
+main.container-fluid section div p.textoAmbar {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  font-size: 25px;
+  margin-left: 90px;
+  margin-bottom: 100px;
+}
+
+main.container-fluid section div p.textoAmbar img.imagenAmbar {
+  margin-bottom: 100px;
+}
+
+div div h1 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 120px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+div div h2 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 55px;
+  margin-bottom: 50px;
+}
+
+div div p {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#contenedor {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contenedor #proyectos {
+  display: -ms-grid;
+  display: grid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contenedor #proyectos img {
+  width: 100%;
+}
+
+#contenedor #proyectos img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.centrar {
+  text-align: center;
+}
+
+.icono {
+  font-size: 30px;
+}
+
+.iconoCafe {
+  font-size: 40px;
+}
+/*# sourceMappingURL=estilado.css.map */

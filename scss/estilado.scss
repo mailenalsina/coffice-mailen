@@ -1,0 +1,135 @@
+@import '../scss/mixin';
+
+$colorMenu: rgb(157, 240, 192);
+$colorTitulo: black;
+$fuentePrincipal: 'Poppins', sans-serif;
+$textoCentrado: center;
+$tamanoIcono: 30px;
+$tamanoTituloSecciones: 50px;
+
+
+html {
+    width: auto;
+}
+header {
+            ul.menuFlex {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                padding-right: 40px;
+            }   
+                    li {
+                    list-style: none;
+                    border-radius: 10px;
+                    padding: 20px;
+                    font-family: $fuentePrincipal 
+                   
+                    }   
+                        a {
+                            text-decoration: none;
+                            color: $colorMenu;
+                            font-size: 25px;    
+                        }
+            h1 {
+                font-size: $tamanoTituloSecciones;
+                font-family: $fuentePrincipal;
+                padding-bottom: 60px; 
+            }                    
+}
+
+main.container-fluid {
+    section.row.cards {
+        margin-bottom: 100px;
+    }
+    h1 {
+        font-size: $tamanoTituloSecciones;
+        font-family: $fuentePrincipal; 
+        padding-bottom: 60px; 
+    }
+
+    section {
+        div{
+            h2.h2Ambar{
+                @include tipografiaJustificada;
+                margin-bottom: 40px;
+                margin-left: 90px;
+            }
+            p.textoAmbar{
+                @include tipografiaJustificada;
+                font-size: 25px; 
+                margin-left: 90px;
+                margin-bottom: 100px;
+            img.imagenAmbar{
+                margin-bottom: 100px;
+            }    
+            }
+        }
+    }
+}
+
+
+div {
+    div {
+        h1 {
+            color: $colorTitulo;
+            font-family: $fuentePrincipal;
+            font-size: 120px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: $colorTitulo;
+            font-family: $fuentePrincipal;
+            font-size: 55px;
+            margin-bottom: 50px;
+        }
+        p {
+            color: $colorTitulo;
+            font-family: $fuentePrincipal;
+            font-size: 30px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+    }   
+} 
+
+#contenedor{
+    width: 100%;
+    display: grid;
+    justify-content: center;             
+    #proyectos{
+            display: grid;
+            width: fit-content;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows:  1fr 1fr 1fr; 
+            column-gap: 10px;
+            row-gap: 10px;
+            justify-content: center; 
+            
+            img{
+                width:100%;
+                 }                 
+
+            img:hover{
+                transform: scale(1.3);
+            }
+    } 
+}                                               
+
+
+.centrar {
+    text-align: $textoCentrado;
+}
+.icono {
+    font-size: $tamanoIcono;
+}
+.iconoCafe {
+    font-size: 40px;
+}
+
+
+
+    
+
+
+
