@@ -1,12 +1,13 @@
 @import '../scss/mixin';
 
-$colorMenu: rgb(157, 240, 192);
+$colorMenu: rgb(0, 0, 0);
 $colorTitulo: black;
 $fuentePrincipal: 'Poppins', sans-serif;
 $textoCentrado: center;
 $tamanoIcono: 30px;
 $tamanoTituloSecciones: 50px;
 
+*{padding: 0; margin: 0;}
 
 html {
     width: auto;
@@ -67,31 +68,59 @@ main.container-fluid {
     }
 }
 
+// Esto es el index
+main {
+    section {
+        div {
+            div.imagenPortada {
+                background-image: url(../img/cafeofi.jpg);
+                width: 100%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 600px;
+                object-fit: cover;
+              
+                /* scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+                    h1 {
+                        width: 100%;
+                        color: $colorTitulo;
+                        font-family: $fuentePrincipal;
+                        font-size: 100px;
+                        margin-top: 50px;
+                        margin-bottom: 50px;
+                        background: rgba(255, 254, 254, 0.515) 
+                    }  
+            }
+        } 
+    }
+    section.row {
+        div{
+            p { @include tipografiaJustificada;
+                font-size: 30px;
+                text-align: $textoCentrado;
+                margin-top: 100px;
+                text-align: justify;
+            }
+        }
+        div {
+            img.imagenCafe {
+                margin-top: 115px;
+                margin-left: 60px;
+                width: 400px;
+            }
+        }
+    }
+}
 
-div {
-    div {
-        h1 {
-            color: $colorTitulo;
-            font-family: $fuentePrincipal;
-            font-size: 120px;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-        h2 {
-            color: $colorTitulo;
-            font-family: $fuentePrincipal;
-            font-size: 55px;
-            margin-bottom: 50px;
-        }
-        p {
-            color: $colorTitulo;
-            font-family: $fuentePrincipal;
-            font-size: 30px;
-            margin-top: 100px;
-            margin-bottom: 100px;
-        }
-    }   
-} 
 
 #contenedor{
     width: 100%;
@@ -108,6 +137,7 @@ div {
             
             img{
                 width:100%;
+                transition: all 1s;
                  }                 
 
             img:hover{
@@ -115,6 +145,11 @@ div {
             }
     } 
 }                                               
+
+
+footer {
+    margin-top: 900px;
+}
 
 
 .centrar {
@@ -130,6 +165,18 @@ div {
 
 
     
-
+.parallax {
+    /* The image used */
+    background-image: url(../img/cafeofi.jpg);
+  
+    /* Set a specific height */
+    height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 
