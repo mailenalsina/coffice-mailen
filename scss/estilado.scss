@@ -13,6 +13,8 @@ html {
     width: auto;
 }
 header {
+    margin-top: 20px;
+    margin-bottom: 40px;
             ul.menuFlex {
                 display: flex;
                 flex-direction: row;
@@ -38,7 +40,9 @@ header {
             }                    
 }
 
-main.container-fluid {
+/*Esta es la seccion Especialidades*/
+
+main.container {
     section.row.cards {
         margin-bottom: 100px;
     }
@@ -47,12 +51,19 @@ main.container-fluid {
         font-family: $fuentePrincipal; 
         padding-bottom: 60px; 
     }
+}
 
+// Hasta aca
+
+
+/*Esta es la seccion Ambar*/
+
+main.container {
     section {
         div{
             h2.h2Ambar{
                 @include tipografiaJustificada;
-                margin-bottom: 40px;
+                
                 margin-left: 90px;
             }
             p.textoAmbar{
@@ -68,12 +79,15 @@ main.container-fluid {
     }
 }
 
+// Hasta aca
+
+
 // Esto es el index
 main {
     section {
         div {
             div.imagenPortada {
-                background-image: url(../img/cafeofi.jpg);
+                background-image: url(../img/barilustrado.jpg);
                 width: 100%;
                 position: relative;
                 display: flex;
@@ -104,23 +118,54 @@ main {
     }
     section.row {
         div{
-            p { @include tipografiaJustificada;
+            p.pdeIndex { @include tipografiaJustificada;
                 font-size: 30px;
-                text-align: $textoCentrado;
-                margin-top: 100px;
+                margin-top: 250px;
                 text-align: justify;
+                margin-left: 80px;
             }
         }
+       
         div {
             img.imagenCafe {
-                margin-top: 115px;
+                margin-top: 250px;
                 margin-left: 60px;
-                width: 400px;
-            }
+                width: 600px;
+            } 
         }
     }
+
+
+    section.enlaceEspecialidades {
+        display: flex;
+            
+                p {
+                    font-family: $fuentePrincipal;
+                    font-size: 30px;
+                    margin-top: 240px;
+                    margin-left: 220px;
+                }
+                a { 
+                    font-family: $fuentePrincipal;
+                    color: rgb(205, 129, 17);
+                    font-size: 30px;
+                    margin-left: 40px;
+                    margin-top: 240px;
+                }
+        }
+        
+    }
+
+
+
+.iconoCafe {
+    font-size: 40px;
+    margin-left: 300px;
 }
 
+// Hasta aca
+
+/* Esto es la Galeria*/
 
 #contenedor{
     width: 100%;
@@ -131,12 +176,13 @@ main {
             width: fit-content;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows:  1fr 1fr 1fr; 
-            column-gap: 10px;
-            row-gap: 10px;
+            column-gap: 40px;
+            row-gap: 40px;
             justify-content: center; 
             
             img{
-                width:100%;
+                
+                width: 400px;
                 transition: all 1s;
                  }                 
 
@@ -144,11 +190,24 @@ main {
                 transform: scale(1.3);
             }
     } 
-}                                               
+}                 
+
+/* Esto es la seccion Contactanos */
+
+main.container {
+    section.row {
+        form {
+            
+        }
+
+    }
+}
+
 
 
 footer {
-    margin-top: 900px;
+    margin-top: 300px;
+    margin-bottom: 100px;
 }
 
 
@@ -158,9 +217,7 @@ footer {
 .icono {
     font-size: $tamanoIcono;
 }
-.iconoCafe {
-    font-size: 40px;
-}
+
 
 
 
@@ -177,6 +234,6 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
 

@@ -7,6 +7,11 @@ html {
   width: auto;
 }
 
+header {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 header ul.menuFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,24 +45,25 @@ header h1 {
   padding-bottom: 60px;
 }
 
-main.container-fluid section.row.cards {
+/*Esta es la seccion Especialidades*/
+main.container section.row.cards {
   margin-bottom: 100px;
 }
 
-main.container-fluid h1 {
+main.container h1 {
   font-size: 50px;
   font-family: "Poppins", sans-serif;
   padding-bottom: 60px;
 }
 
-main.container-fluid section div h2.h2Ambar {
+/*Esta es la seccion Ambar*/
+main.container section div h2.h2Ambar {
   font-family: "Poppins", sans-serif;
   text-align: justify;
-  margin-bottom: 40px;
   margin-left: 90px;
 }
 
-main.container-fluid section div p.textoAmbar {
+main.container section div p.textoAmbar {
   font-family: "Poppins", sans-serif;
   text-align: justify;
   font-size: 25px;
@@ -65,12 +71,12 @@ main.container-fluid section div p.textoAmbar {
   margin-bottom: 100px;
 }
 
-main.container-fluid section div p.textoAmbar img.imagenAmbar {
+main.container section div p.textoAmbar img.imagenAmbar {
   margin-bottom: 100px;
 }
 
 main section div div.imagenPortada {
-  background-image: url(../img/cafeofi.jpg);
+  background-image: url(../img/barilustrado.jpg);
   width: 100%;
   position: relative;
   display: -webkit-box;
@@ -104,21 +110,48 @@ main section div div.imagenPortada h1 {
   background: rgba(255, 254, 254, 0.515);
 }
 
-main section.row div p {
+main section.row div p.pdeIndex {
   font-family: "Poppins", sans-serif;
   text-align: justify;
   font-size: 30px;
-  text-align: center;
-  margin-top: 100px;
+  margin-top: 250px;
   text-align: justify;
+  margin-left: 80px;
 }
 
 main section.row div img.imagenCafe {
-  margin-top: 115px;
+  margin-top: 250px;
   margin-left: 60px;
-  width: 400px;
+  width: 600px;
 }
 
+main section.enlaceEspecialidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.enlaceEspecialidades p {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  margin-top: 240px;
+  margin-left: 220px;
+}
+
+main section.enlaceEspecialidades a {
+  font-family: "Poppins", sans-serif;
+  color: #cd8111;
+  font-size: 30px;
+  margin-left: 40px;
+  margin-top: 240px;
+}
+
+.iconoCafe {
+  font-size: 40px;
+  margin-left: 300px;
+}
+
+/* Esto es la Galeria*/
 #contenedor {
   width: 100%;
   display: -ms-grid;
@@ -138,16 +171,16 @@ main section.row div img.imagenCafe {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 10px;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 #contenedor #proyectos img {
-  width: 100%;
+  width: 400px;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -157,8 +190,10 @@ main section.row div img.imagenCafe {
           transform: scale(1.3);
 }
 
+/* Esto es la seccion Contactanos */
 footer {
-  margin-top: 900px;
+  margin-top: 300px;
+  margin-bottom: 100px;
 }
 
 .centrar {
@@ -167,10 +202,6 @@ footer {
 
 .icono {
   font-size: 30px;
-}
-
-.iconoCafe {
-  font-size: 40px;
 }
 
 .parallax {
