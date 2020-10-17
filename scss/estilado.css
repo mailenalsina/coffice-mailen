@@ -191,6 +191,16 @@ main section.enlaceEspecialidades a {
 }
 
 /* Esto es la seccion Contactanos */
+/*Esto es el footer*/
+section div.direccion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 footer {
   margin-top: 300px;
   margin-bottom: 100px;

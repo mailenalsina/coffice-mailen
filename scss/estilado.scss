@@ -125,7 +125,7 @@ main {
                 margin-left: 80px;
             }
         }
-       
+
         div {
             img.imagenCafe {
                 margin-top: 250px;
@@ -203,6 +203,17 @@ main.container {
     }
 }
 
+
+/*Esto es el footer*/
+
+section {
+    div.direccion {
+        display: flex;
+        justify-content: center; 
+
+    }
+   
+}
 
 
 footer {
