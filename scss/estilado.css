@@ -35,7 +35,7 @@ header li {
 
 header a {
   text-decoration: none;
-  color: black;
+  color: #cd8111;
   font-size: 25px;
 }
 
@@ -43,17 +43,55 @@ header h1 {
   font-size: 50px;
   font-family: "Poppins", sans-serif;
   padding-bottom: 60px;
+  color: #684005;
+}
+
+header h1.animacion {
+  -webkit-animation-name: mianimacion;
+          animation-name: mianimacion;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes mianimacion {
+  0% {
+    color: rgba(230, 193, 137, 0.769);
+  }
+  25% {
+    color: rgba(205, 130, 17, 0.803);
+  }
+  50% {
+    color: rgba(142, 94, 21, 0.837);
+  }
+  100% {
+    color: #684005;
+  }
+}
+
+@keyframes mianimacion {
+  0% {
+    color: rgba(230, 193, 137, 0.769);
+  }
+  25% {
+    color: rgba(205, 130, 17, 0.803);
+  }
+  50% {
+    color: rgba(142, 94, 21, 0.837);
+  }
+  100% {
+    color: #684005;
+  }
 }
 
 /*Esta es la seccion Especialidades*/
-main.container section.row.cards {
-  margin-bottom: 100px;
+div.card {
+  -webkit-box-shadow: 1px 1px 5px;
+          box-shadow: 1px 1px 5px;
 }
 
-main.container h1 {
-  font-size: 50px;
+div.card div.card-body {
   font-family: "Poppins", sans-serif;
-  padding-bottom: 60px;
+  font-size: 20px;
 }
 
 /*Esta es la seccion Ambar*/
@@ -102,15 +140,41 @@ main section div div.imagenPortada {
 
 main section div div.imagenPortada h1 {
   width: 100%;
-  color: black;
+  color: #684005;
   font-family: "Poppins", sans-serif;
   font-size: 100px;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 50px;
-  background: rgba(255, 254, 254, 0.515);
+  background: rgba(255, 254, 254, 0.693);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-main section.row div p.pdeIndex {
+main section div div.imagenPortada h1.animacion {
+  -webkit-animation-name: mianimacion;
+          animation-name: mianimacion;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@keyframes mianimacion {
+  0% {
+    color: rgba(230, 193, 137, 0.769);
+  }
+  25% {
+    color: rgba(205, 130, 17, 0.803);
+  }
+  50% {
+    color: rgba(142, 94, 21, 0.837);
+  }
+  100% {
+    color: #684005;
+  }
+}
+
+section.row div p.pdeIndex {
   font-family: "Poppins", sans-serif;
   text-align: justify;
   font-size: 30px;
@@ -119,26 +183,26 @@ main section.row div p.pdeIndex {
   margin-left: 80px;
 }
 
-main section.row div img.imagenCafe {
+section.row div img.imagenCafe {
   margin-top: 250px;
   margin-left: 60px;
   width: 600px;
 }
 
-main section.enlaceEspecialidades {
+section.enlaceEspecialidades {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main section.enlaceEspecialidades p {
+section.enlaceEspecialidades p {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   margin-top: 240px;
   margin-left: 220px;
 }
 
-main section.enlaceEspecialidades a {
+section.enlaceEspecialidades a {
   font-family: "Poppins", sans-serif;
   color: #cd8111;
   font-size: 30px;
@@ -191,6 +255,83 @@ main section.enlaceEspecialidades a {
 }
 
 /* Esto es la seccion Contactanos */
+main section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section form div label {
+  font-family: "Poppins", sans-serif;
+  margin-top: 50px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+main section form div textarea {
+  width: 600px;
+  height: 200px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 2px 5px #cd8111;
+          box-shadow: 2px 2px 5px #cd8111;
+}
+
+main section form div input.datos {
+  width: 600px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 2px 5px #cd8111;
+          box-shadow: 2px 2px 5px #cd8111;
+}
+
+main section form div input::-webkit-input-placeholder {
+  color: #cd8111;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+main section form div input:-ms-input-placeholder {
+  color: #cd8111;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+main section form div input::-ms-input-placeholder {
+  color: #cd8111;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+main section form div input::placeholder {
+  color: #cd8111;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+main section form div input.enviar {
+  width: 200px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: white;
+  color: #cd8111;
+  -webkit-box-shadow: 2px 2px 5px #cd8111;
+          box-shadow: 2px 2px 5px #cd8111;
+}
+
 /*Esto es el footer*/
 section div.direccion {
   display: -webkit-box;

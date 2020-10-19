@@ -1,7 +1,7 @@
 @import '../scss/mixin';
 
-$colorMenu: rgb(0, 0, 0);
-$colorTitulo: black;
+$colorMenu: rgb(205, 129, 17);
+$colorTitulo: rgb(104, 64, 5);
 $fuentePrincipal: 'Poppins', sans-serif;
 $textoCentrado: center;
 $tamanoIcono: 30px;
@@ -37,21 +37,32 @@ header {
                 font-size: $tamanoTituloSecciones;
                 font-family: $fuentePrincipal;
                 padding-bottom: 60px; 
-            }                    
+                color: $colorTitulo;
+            }       
+            
+            h1.animacion {
+                animation-name: mianimacion;
+                animation-duration: 1s;
+
+            }
+            @keyframes mianimacion {
+                0% { color: rgba(230, 193, 137, 0.769)}
+                25% {color: rgba(205, 130, 17, 0.803)}
+                50% { color: rgba(142, 94, 21, 0.837)}
+                100% {color: rgb(104, 64, 5)}
+            }
 }
 
 /*Esta es la seccion Especialidades*/
+div.card {
+    box-shadow: 1px 1px 5px;
 
-main.container {
-    section.row.cards {
-        margin-bottom: 100px;
-    }
-    h1 {
-        font-size: $tamanoTituloSecciones;
-        font-family: $fuentePrincipal; 
-        padding-bottom: 60px; 
+    div.card-body {
+        font-family: $fuentePrincipal;
+        font-size: 20px;
     }
 }
+    
 
 // Hasta aca
 
@@ -109,13 +120,27 @@ main {
                         color: $colorTitulo;
                         font-family: $fuentePrincipal;
                         font-size: 100px;
-                        margin-top: 50px;
+                        margin-top: 100px;
                         margin-bottom: 50px;
-                        background: rgba(255, 254, 254, 0.515) 
+                        background: rgba(255, 254, 254, 0.693); 
+                        padding-left: 20px;
+                        padding-right: 20px;
                     }  
+                    h1.animacion {
+                    animation-name: mianimacion;
+                    animation-duration: 1s;
+                    animation-delay: 0.5s ;
+                    }
+                    @keyframes mianimacion {
+                        0% { color: rgba(230, 193, 137, 0.769)}
+                        25% {color: rgba(205, 130, 17, 0.803)}
+                        50% { color: rgba(142, 94, 21, 0.837)}
+                        100% {color: rgb(104, 64, 5)}
+                    }
             }
         } 
-    }
+    }     
+}
     section.row {
         div{
             p.pdeIndex { @include tipografiaJustificada;
@@ -154,7 +179,7 @@ main {
                 }
         }
         
-    }
+    
 
 
 
@@ -194,10 +219,53 @@ main {
 
 /* Esto es la seccion Contactanos */
 
-main.container {
-    section.row {
+main {
+    section {
         form {
-            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            div {
+                label {
+                    font-family: $fuentePrincipal;   
+                    margin-top: 50px;
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                }
+                textarea {
+                    width: 600px;
+                    height: 200px;
+                    font-family: $fuentePrincipal;   
+                    font-size: 20px;
+                    padding: 10px;  
+                    margin-top: 20px;
+                    box-shadow: 2px 2px 5px rgb(205, 129, 17);
+
+                }
+                input.datos {
+                    width: 600px;
+                    height: 50px;   
+                    font-family: $fuentePrincipal;   
+                    padding-left: 10px;    
+                    font-size: 20px;
+                    margin-top: 20px;
+                    box-shadow: 2px 2px 5px rgb(205, 129, 17);
+                }
+                input::placeholder {
+                    color: rgb(205, 129, 17);
+                    font-size: 20px;
+                    font-family: $fuentePrincipal;                
+                }
+                input.enviar {
+                    width: 200px;
+                    font-family: $fuentePrincipal;   
+                    font-size: 20px;
+                    margin-top: 20px;
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(205, 129, 17);
+                    box-shadow: 2px 2px 5px rgb(205, 129, 17);
+                }
+            }
         }
 
     }
