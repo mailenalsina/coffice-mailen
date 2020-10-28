@@ -1,11 +1,11 @@
 @import '../scss/mixin';
 
-$colorMenu: rgb(205, 129, 17);
+$colorMenu: rgb(0, 0, 0);
 $colorTitulo: rgb(104, 64, 5);
 $fuentePrincipal: 'Poppins', sans-serif;
 $textoCentrado: center;
 $tamanoIcono: 30px;
-$tamanoTituloSecciones: 50px;
+$tamanoTituloSecciones: 35px;
 
 *{padding: 0; margin: 0;}
 
@@ -35,9 +35,12 @@ header {
                         }
             h1 {
                 font-size: $tamanoTituloSecciones;
-                font-family: $fuentePrincipal;
-                padding-bottom: 60px; 
+                font-family: $fuentePrincipal; 
+                margin-top: 70px;
                 color: $colorTitulo;
+                margin-left: 90px;
+                text-transform: uppercase;
+                text-decoration: underline overline;                
             }       
             
             h1.animacion {
@@ -55,7 +58,7 @@ header {
 
 /*Esta es la seccion Especialidades*/
 div.card {
-    box-shadow: 1px 1px 5px;
+    box-shadow: 0 4px 20px 0 rgba(114, 111, 111, 0.5);
 
     div.card-body {
         font-family: $fuentePrincipal;
@@ -69,22 +72,37 @@ div.card {
 
 /*Esta es la seccion Ambar*/
 
-main.container {
+main {
     section {
+        div.parallaxAmbar {
+            /* The image used */
+            background-image: url(../img/ambarcafe.jpg);
+          
+            /* Set a specific height */
+            height: 500px;
+          
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }  
         div{
             h2.h2Ambar{
                 @include tipografiaJustificada;
                 
                 margin-left: 90px;
             }
-            p.textoAmbar{
+        }
+        div.historia {
+            p{
                 @include tipografiaJustificada;
                 font-size: 25px; 
-                margin-left: 90px;
+                margin-top: 90px;
+                margin-left: 120px;
+                margin-right: 120px;
                 margin-bottom: 100px;
-            img.imagenAmbar{
-                margin-bottom: 100px;
-            }    
+                line-height: 2; 
             }
         }
     }
@@ -114,29 +132,16 @@ main {
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+                    div {
+                        h1.textoBorde {
+                            font-size: 200px;
+                            color: rgb(255, 255, 255);
+                            -webkit-text-stroke: 2px black;
+   
+                        }
+
+                    }
                 
-                    h1 {
-                        width: 100%;
-                        color: $colorTitulo;
-                        font-family: $fuentePrincipal;
-                        font-size: 100px;
-                        margin-top: 100px;
-                        margin-bottom: 50px;
-                        background: rgba(255, 254, 254, 0.693); 
-                        padding-left: 20px;
-                        padding-right: 20px;
-                    }  
-                    h1.animacion {
-                    animation-name: mianimacion;
-                    animation-duration: 1s;
-                    animation-delay: 0.5s ;
-                    }
-                    @keyframes mianimacion {
-                        0% { color: rgba(230, 193, 137, 0.769)}
-                        25% {color: rgba(205, 130, 17, 0.803)}
-                        50% { color: rgba(142, 94, 21, 0.837)}
-                        100% {color: rgb(104, 64, 5)}
-                    }
             }
         } 
     }     
@@ -186,6 +191,7 @@ main {
 .iconoCafe {
     font-size: 40px;
     margin-left: 300px;
+    margin-top: 45px;
 }
 
 // Hasta aca
