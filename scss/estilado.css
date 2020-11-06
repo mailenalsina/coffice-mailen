@@ -136,12 +136,6 @@ div.parallaxAmbar {
   margin-top: 80px;
 }
 
-section div h2.h2Ambar {
-  font-family: "Poppins", sans-serif;
-  text-align: justify;
-  margin-left: 90px;
-}
-
 section div.historia p {
   font-family: "Poppins", sans-serif;
   text-align: justify;
@@ -153,7 +147,7 @@ section div.historia p {
   line-height: 2;
 }
 
-section div.parallaxAmbar2 {
+div.parallaxAmbar2 {
   background-image: url(../img/ambargranos.jpg);
   height: 500px;
   background-attachment: fixed;
@@ -208,7 +202,6 @@ section.row div .iconoCafe {
 
 section.row div img.imagenCafe {
   margin-top: 100px;
-  margin-left: 60px;
   width: 500px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -216,9 +209,7 @@ section.row div img.imagenCafe {
 }
 
 section.enlaceEspecialidades {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: flex-wrap;
   margin-bottom: 80px;
 }
 
@@ -226,14 +217,12 @@ section.enlaceEspecialidades p {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   margin-top: 150px;
-  margin-left: 220px;
 }
 
 section.enlaceEspecialidades a {
   font-family: "Poppins", sans-serif;
   color: #cd8111;
   font-size: 30px;
-  margin-left: 40px;
   margin-top: 150px;
 }
 
@@ -307,7 +296,7 @@ div.parallaxGaleria {
 }
 
 /* Esto es la seccion Contactanos */
-div.parallaxContactanos1 {
+.parallaxContactanos1 {
   background-image: url(../img/contactanos1.jpg);
   height: 500px;
   background-attachment: fixed;
@@ -317,7 +306,7 @@ div.parallaxContactanos1 {
   margin-top: 80px;
 }
 
-section form {
+main section form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,26 +319,27 @@ section form {
           align-items: center;
 }
 
-section form div label {
+main section form label {
   font-family: "Poppins", sans-serif;
   margin-top: 50px;
   font-size: 30px;
   margin-bottom: 20px;
 }
 
-section form div textarea {
-  width: 600px;
-  height: 200px;
+main section form textarea {
+  min-height: 200px;
+  max-height: 300px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   padding: 10px;
   margin-top: 20px;
   -webkit-box-shadow: 2px 2px 5px #cd8111;
           box-shadow: 2px 2px 5px #cd8111;
+  width: 50%;
+  display: block;
 }
 
-section form div input.datos {
-  width: 600px;
+main section form .datos {
   height: 50px;
   font-family: "Poppins", sans-serif;
   padding-left: 10px;
@@ -357,33 +347,35 @@ section form div input.datos {
   margin-top: 20px;
   -webkit-box-shadow: 2px 2px 5px #cd8111;
           box-shadow: 2px 2px 5px #cd8111;
+  width: 50%;
+  display: block;
 }
 
-section form div input::-webkit-input-placeholder {
+main section form input::-webkit-input-placeholder {
   color: #cd8111;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
-section form div input:-ms-input-placeholder {
+main section form input:-ms-input-placeholder {
   color: #cd8111;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
-section form div input::-ms-input-placeholder {
+main section form input::-ms-input-placeholder {
   color: #cd8111;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
-section form div input::placeholder {
+main section form input::placeholder {
   color: #cd8111;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
-section form div input.enviar {
+main section form input.enviar {
   width: 200px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -394,30 +386,32 @@ section form div input.enviar {
           box-shadow: 2px 2px 5px #cd8111;
 }
 
-section .hojacontactos {
+main .hojacontactos {
   margin-bottom: 50px;
 }
 
-/*Esto es el footer*/
-section div.direccion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Poppins", sans-serif;
-  margin-top: 80px;
+@media screen and (max-width: 768px) {
+  section form textarea {
+    width: 200px;
+  }
+  section form input.datos {
+    width: 200px;
+  }
 }
 
-section p {
+/*Esto es el footer*/
+section.row {
+  margin: 0;
+}
+
+section.row p {
   font-family: "Poppins", sans-serif;
 }
 
 footer {
   background-color: #f2dab1;
-  padding-top: 80px;
-  height: 400px;
+  padding-top: 50px;
+  height: 200px;
 }
 
 .centrar {
@@ -468,6 +462,58 @@ footer {
 @media screen and (max-width: 768px) {
   header ul.menuFlex {
     display: block;
+  }
+  header h1 {
+    margin-left: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section div.imagenPortada {
+    height: 200px;
+  }
+  section div.imagenPortada div h1.textoBorde {
+    font-size: 100px;
+  }
+  section.row div .iconoCafe {
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.parallaxGaleria1 {
+    height: 300px;
+  }
+  #contenedor #proyectos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  div.parallaxGaleria {
+    height: 300px;
+  }
+}
+
+/*Esta es la seccion Ambar*/
+@media screen and (max-width: 768px) {
+  div.parallaxAmbar {
+    height: 200px;
+  }
+  section div.historia p {
+    font-size: 20px;
+    margin-left: 45px;
+    margin-right: 50px;
+  }
+  div.parallaxAmbar2 {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding-top: 80px;
+    height: 500px;
   }
 }
 /*# sourceMappingURL=estilado.css.map */

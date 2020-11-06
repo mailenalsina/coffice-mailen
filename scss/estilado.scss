@@ -99,16 +99,9 @@ div.parallaxAmbar {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 80px;}
-
+    margin-top: 80px;
+}
 section {  
-    div{
-        h2.h2Ambar{
-            @include tipografiaJustificada;
-            
-            margin-left: 90px;
-        }
-    }
     div.historia {
         p{
             @include tipografiaJustificada;
@@ -120,15 +113,17 @@ section {
             line-height: 2; 
         }
     }
-    div.parallaxAmbar2 {
-        background-image: url(../img/ambargranos.jpg);
-        height: 500px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }  
+}    
+div.parallaxAmbar2 {
+    background-image: url(../img/ambargranos.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
 }
+
 
 
 // Hasta aca
@@ -178,7 +173,6 @@ section.row {
     div {
         img.imagenCafe {
         margin-top: 100px;
-        margin-left: 60px;
         width: 500px;
         object-fit: cover;
         overflow: hidden;
@@ -187,19 +181,17 @@ section.row {
 }
 
 section.enlaceEspecialidades {
-display: flex;
+display: flex-wrap;
 margin-bottom: 80px;
     p {
     font-family: $fuentePrincipal;
     font-size: 30px;
     margin-top: 150px;
-    margin-left: 220px;
     }
     a { 
     font-family: $fuentePrincipal;
     color: rgb(205, 129, 17);
     font-size: 30px;
-    margin-left: 40px;
     margin-top: 150px;
     }
 }
@@ -258,95 +250,99 @@ div.parallaxGaleria {
         background-size: cover;
 }     
 
-           
+
 
 /* Esto es la seccion Contactanos */
 
-
-div.parallaxContactanos1{
-            background-image: url(../img/contactanos1.jpg);
-            height: 500px;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin-top: 80px;
-}       
-section {
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        div {
-            label {
-                font-family: $fuentePrincipal;   
-                margin-top: 50px;
-                font-size: 30px;
-                margin-bottom: 20px;
+.parallaxContactanos1{
+    background-image: url(../img/contactanos1.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+    }   
+    main{    
+        section {
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                    label {
+                        font-family: $fuentePrincipal;   
+                        margin-top: 50px;
+                        font-size: 30px;
+                        margin-bottom: 20px;
+                    }
+                    textarea {
+                    min-height: 200px;
+                    max-height: 300px;
+                    font-family: $fuentePrincipal;   
+                    font-size: 20px;
+                    padding: 10px;  
+                    margin-top: 20px;
+                    box-shadow: 2px 2px 5px rgb(205, 129, 17);
+                    width: 50%;
+                    display: block;
+                    }
+                    .datos {
+                    height: 50px;   
+                    font-family: $fuentePrincipal;   
+                    padding-left: 10px;    
+                    font-size: 20px;
+                    margin-top: 20px;
+                    box-shadow: 2px 2px 5px rgb(205, 129, 17);
+                    width: 50%;
+                    display: block;
+                    }
+                    input::placeholder {
+                    color: rgb(205, 129, 17);
+                    font-size: 20px;
+                    font-family: $fuentePrincipal;                
+                    }
+                    input.enviar {
+                    width: 200px;
+                    font-family: $fuentePrincipal;   
+                    font-size: 20px;
+                    margin-top: 20px;
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(205, 129, 17);
+                    box-shadow: 2px 2px 5px rgb(205, 129, 17);
+                    }
             }
-            textarea {
-                width: 600px;
-                height: 200px;
-                font-family: $fuentePrincipal;   
-                font-size: 20px;
-                padding: 10px;  
-                margin-top: 20px;
-                box-shadow: 2px 2px 5px rgb(205, 129, 17);
+        }
+        .hojacontactos{margin-bottom: 50px;}
+    }
 
+//Hasta acá
+
+@media screen and (max-width: 768px) {
+    section{
+        form{
+            textarea {
+                width: 200px;
             }
             input.datos {
-                width: 600px;
-                height: 50px;   
-                font-family: $fuentePrincipal;   
-                padding-left: 10px;    
-                font-size: 20px;
-                margin-top: 20px;
-                box-shadow: 2px 2px 5px rgb(205, 129, 17);
-            }
-            input::placeholder {
-                color: rgb(205, 129, 17);
-                font-size: 20px;
-                font-family: $fuentePrincipal;                
-            }
-            input.enviar {
                 width: 200px;
-                font-family: $fuentePrincipal;   
-                font-size: 20px;
-                margin-top: 20px;
-                background-color: rgb(255, 255, 255);
-                color: rgb(205, 129, 17);
-                box-shadow: 2px 2px 5px rgb(205, 129, 17);
             }
         }
     }
-    .hojacontactos{margin-bottom: 50px;
-
-    }
 }
-
-
 
 /*Esto es el footer*/
 
-section {
-    div.direccion {
-        display: flex;
-        justify-content: center; 
-        font-family: $fuentePrincipal;
-        margin-top: 80px;
-    }
-    p{
+section.row {
+    margin: 0;
+    p {
         font-family: $fuentePrincipal;
     }
    
 }
-
-
 footer {
-    
     background-color: rgb(242, 218, 177);
-    padding-top: 80px;
-    height: 400px;
+    padding-top: 50px;
+    height: 200px;
 }
 
 
@@ -403,8 +399,87 @@ footer {
             display: block;
            
         }
+        h1 {
+            
+            margin-left: 45px;
+                          
+        }  
     }
 }
 
 
 
+//index
+
+@media screen and (max-width: 768px){
+
+section {
+    div.imagenPortada {
+    height: 200px;
+        div {
+            h1.textoBorde {
+            font-size: 100px;
+            }
+        }
+    }
+
+}
+section.row {
+    div{
+        .iconoCafe {
+        margin-left: 150px;
+        }
+    }
+}
+}
+
+
+ // Galería
+
+ @media screen and (max-width: 768px){
+
+ div.parallaxGaleria1 {
+    height: 300px;
+}  
+#contenedor{            
+    #proyectos{
+            grid-template-columns: 1fr;
+            grid-template-rows:  1fr;
+    } 
+} 
+div.parallaxGaleria {  
+    height: 300px;
+}     
+
+}
+
+/*Esta es la seccion Ambar*/
+
+@media screen and (max-width: 768px){
+
+    div.parallaxAmbar {
+        height: 200px;
+        }
+
+    section {  
+        div.historia {
+            p{
+                font-size: 20px; 
+                margin-left: 45px;
+                margin-right: 50px;
+            }
+        }
+    }
+    div.parallaxAmbar2 {
+        height: 200px;
+    }
+}
+
+//Footer
+
+@media screen and (max-width: 768px) {
+    footer{
+        padding-top: 80px;
+        height: 500px;
+    }
+}

@@ -12,57 +12,44 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body> 
+<body>
     <header>
-        <div>
-            <nav>
-                <ul class="menuFlex">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="ambar.html">Ambar</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="especialidades.html">Especialidades</a></li>
-                    <li><a href="contactanos.html">Contactanos</a></li>
-                </ul> 
-            </nav>
-        </div>
+        <nav>
+            <ul class="menuFlex">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="ambar.html">Ambar</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="especialidades.html">Especialidades</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+            </ul> 
+        </nav>
         <h1 class="animacion" data-aos="zoom-in" data-aos-duration="1000">Contactanos</h1>
     </header>
 
     <div class="parallaxContactanos1"></div>
-    <main class="contenedor">
+
+    <main class="contenedor">        
         <div class="hojaSeparadora">
             <ion-icon name="leaf-outline"></ion-icon>
         </div>
         <section>
             <form data-aos="zoom-in" data-aos-duration="1000"> <!-- <form name="contact" method="POST" data-netlify="true"> -->
-                <div>
-                    <label for="mensaje">Completá con tus datos:</label>
-                </div>
-                <div>
-                    <input class="datos" placeholder="Nombre" type="text" id="nombre" required>
-                </div>
-                <div>
-                    <input class="datos" placeholder="Apellido" type="text" id="apellido" required>
-                </div>
-                <div>
-                    <input class="datos" placeholder="Correo Electrónico" type="email" id="mail" required>
-                </div>
-                <div>
-                    <label for="mensaje">¡Dejanos un mensaje!</label>
-                </div>
-                <div>
-                    <textarea name="mensaje" type="textarea" required></textarea>
-                </div>    
-                <div>
-                    <input class="enviar" type="submit"> 
-                </div>    
+                <label for="mensaje">Completá con tus datos:</label>
+                
+                <input class="datos tamanioFormulario" placeholder="Nombre" type="text" id="nombre" required>
+                <input class="datos tamanioFormulario" placeholder="Apellido" type="text" id="apellido" required>
+                <input class="datos tamanioFormulario" placeholder="Correo Electrónico" type="email" id="mail" required>
+                <label for="mensaje">¡Dejanos un mensaje!</label>
+
+                <textarea name="mensaje" type="textarea" class="tamanioFormulario" required></textarea>   
+                <input class="enviar" type="submit"> 
            </form>
            
            <div class="hojaSeparadora hojacontactos">
             <ion-icon name="leaf-outline"></ion-icon>
         </div>
         </section>
-    </main>  
+    </main>
     <footer>
         <section class="row centrar">
             <div class="col-sm-3 col-md-2 col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
@@ -83,7 +70,7 @@
             </div>
         </section>
         <section>  
-            <div class="direccion" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="centrar" data-aos="zoom-in" data-aos-duration="1000">
                 <p>Olleros 2453 - CP 1425 - Todos los derechos reservados - 2020</p>
             </div>
         </section>
