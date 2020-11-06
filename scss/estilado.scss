@@ -1,7 +1,7 @@
 @import '../scss/mixin';
 
 $colorMenu: rgb(0, 0, 0);
-$colorTitulo: rgb(104, 64, 5);
+$colorTitulo:  rgb(104, 64, 5);
 $fuentePrincipal: 'Poppins', sans-serif;
 $textoCentrado: center;
 $tamanoIcono: 30px;
@@ -21,50 +21,40 @@ body {
     margin: auto;
 }
 header {
-    margin-top: 20px;
-    margin-bottom: 40px;
-            ul.menuFlex {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                padding-right: 40px;  
-                    li {
-                    list-style: none;
-                    border-radius: 10px;
-                    padding: 20px;
-                    font-family: $fuentePrincipal; 
-                        a {
-                            text-decoration: none;
-                            color: $colorMenu;
-                            font-size: 25px;    
-                        }
-                        a:hover {
-                            border-bottom: solid;
-                            color: rgba(205, 130, 17, 0.803);
-                        }
-                    }    
-            }             
-            h1 {
-                font-size: $tamanoTituloSecciones;
+        nav {
+            a.homeMenu {
                 font-family: $fuentePrincipal; 
-                margin-top: 70px;
-                color: $colorTitulo;
-                margin-left: 90px;
-                text-transform: uppercase;
-                text-decoration: underline overline;                
-            }       
-            
-            h1.animacion {
-                animation-name: mianimacion;
-                animation-duration: 1s;
+                font-size: 25px; 
 
             }
-            @keyframes mianimacion {
-                0% { color: rgba(230, 193, 137, 0.769)}
-                25% {color: rgba(205, 130, 17, 0.803)}
-                50% { color: rgba(142, 94, 21, 0.837)}
-                100% {color: rgb(104, 64, 5)}
+                div.menu {
+                    a { 
+                        font-family: $fuentePrincipal; 
+                        font-size: 25px;    
+                    }
             }
+        }           
+        h1 {
+            font-size: $tamanoTituloSecciones;
+            font-family: $fuentePrincipal; 
+            margin-top: 70px;
+            color: $colorTitulo;
+            margin-left: 90px;
+            text-transform: uppercase;
+            text-decoration: underline overline;                
+        }       
+        
+        h1.animacion {
+            animation-name: mianimacion;
+            animation-duration: 1s;
+
+        }
+        @keyframes mianimacion {
+            0% { color: rgba(230, 193, 137, 0.769)}
+            25% {color: rgba(205, 130, 17, 0.803)}
+            50% { color: rgba(142, 94, 21, 0.837)}
+            100% {color: rgb(104, 64, 5)}
+        }
 }
 
 /*Esta es la seccion Especialidades*/
@@ -344,8 +334,6 @@ footer {
     padding-top: 50px;
     height: 200px;
 }
-
-
 
 .centrar {
     text-align: $textoCentrado;
