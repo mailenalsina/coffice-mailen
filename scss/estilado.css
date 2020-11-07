@@ -37,7 +37,6 @@ header h1 {
   color: #684005;
   margin-left: 90px;
   text-transform: uppercase;
-  text-decoration: underline overline;
 }
 
 header h1.animacion {
@@ -204,7 +203,7 @@ section.enlaceEspecialidades a {
 
 div.parallaxIndex2 {
   background-image: url(../img/card3.jpg);
-  height: 500px;
+  height: 600px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
