@@ -9,6 +9,7 @@ $tamanoTituloSecciones: 35px;
 
 *{padding: 0; margin: 0; box-sizing: border-box;}
 
+
 html {
     width: auto;
 }
@@ -25,7 +26,7 @@ header {
             a.homeMenu {
                 font-family: $fuentePrincipal; 
                 font-size: 25px; 
-
+                margin-left: 15px;
             }
                 div.menu {
                     a { 
@@ -61,6 +62,7 @@ header {
 div.card {
     box-shadow: 0 4px 20px 0 rgba(114, 111, 111, 0.5);
     margin: 40px;
+    margin-top: 90px;
 
     div.card-body {
         font-family: $fuentePrincipal;
@@ -72,6 +74,7 @@ div.card {
         p{
             background-color:rgba(230, 193, 137, 0.255);
             padding: 10px;
+            font-size: 17px;
         }
     }
 }
@@ -197,6 +200,7 @@ background-size: cover;
 
 // Hasta aca
 
+
 /* Esto es la Galeria*/
 
 div.parallaxGaleria1 {
@@ -306,6 +310,7 @@ div.parallaxGaleria {
     }
 
 //Hasta acá
+
 
 @media screen and (max-width: 768px) {
     section{
@@ -464,6 +469,7 @@ div.parallaxGaleria {
 }
 
 //Footer
+
 
 @media screen and (max-width: 768px) {
     footer{
