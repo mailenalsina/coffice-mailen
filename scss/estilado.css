@@ -192,14 +192,14 @@ section.enlaceEspecialidades {
 section.enlaceEspecialidades p {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 section.enlaceEspecialidades a {
   font-family: "Poppins", sans-serif;
   color: #cd8111;
   font-size: 30px;
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 div.parallaxIndex2 {
@@ -446,7 +446,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   section div.imagenPortada {
-    height: 300px;
+    height: 400px;
   }
   section div.imagenPortada div h1.textoBorde {
     font-size: 100px;
@@ -457,6 +457,10 @@ footer {
   section.row div .iconoCafe {
     margin-left: 150px;
   }
+}
+
+div.parallaxIndex2 {
+  height: 300px;
 }
 
 @media screen and (max-width: 768px) {
