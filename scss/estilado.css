@@ -446,7 +446,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   section div.imagenPortada {
-    height: 200px;
+    height: 300px;
   }
   section div.imagenPortada div h1.textoBorde {
     font-size: 100px;
@@ -474,7 +474,7 @@ footer {
 /*Esta es la seccion Ambar*/
 @media screen and (max-width: 768px) {
   div.parallaxAmbar {
-    height: 200px;
+    height: 300px;
   }
   section div.historia p {
     font-size: 15px;
@@ -482,7 +482,7 @@ footer {
     margin-right: 45px;
   }
   div.parallaxAmbar2 {
-    height: 200px;
+    height: 300px;
   }
 }
 
